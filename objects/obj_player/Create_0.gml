@@ -4,4 +4,4 @@ sprite_index = spr_prueba_player_rigth;
 image_speed = 0;
 image_index = 0;
 
-v = 4;
+v = 8;
