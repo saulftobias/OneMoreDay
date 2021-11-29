@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"2a22d9aa-d706-4a9f-9805-8a069e830c30","path":"sprites/spr_collision_box/spr_collision_box.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2a22d9aa-d706-4a9f-9805-8a069e830c30","path":"sprites/spr_collision_box/spr_collision_box.yy",},"LayerId":{"name":"0c3525f8-d466-4659-aba6-ca3235466e7e","path":"sprites/spr_collision_box/spr_collision_box.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_collision_box","path":"sprites/spr_collision_box/spr_collision_box.yy",},"resourceVersion":"1.0","name":"2a22d9aa-d706-4a9f-9805-8a069e830c30","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3c39aff0-8614-4c40-ae08-24b6d85557f9","path":"sprites/spr_transition/spr_transition.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3c39aff0-8614-4c40-ae08-24b6d85557f9","path":"sprites/spr_transition/spr_transition.yy",},"LayerId":{"name":"e63d1dc7-b612-4d8b-81a7-3dde40fab522","path":"sprites/spr_transition/spr_transition.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_transition","path":"sprites/spr_transition/spr_transition.yy",},"resourceVersion":"1.0","name":"3c39aff0-8614-4c40-ae08-24b6d85557f9","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_collision_box","path":"sprites/spr_collision_box/spr_collision_box.yy",},
+    "spriteId": {"name":"spr_transition","path":"sprites/spr_transition/spr_transition.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d2e11ba8-fb31-4e03-8ade-3ba09b1241a3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2a22d9aa-d706-4a9f-9805-8a069e830c30","path":"sprites/spr_collision_box/spr_collision_box.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"44367787-5791-4a9b-b819-456a0413275e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3c39aff0-8614-4c40-ae08-24b6d85557f9","path":"sprites/spr_transition/spr_transition.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_collision_box","path":"sprites/spr_collision_box/spr_collision_box.yy",},
+    "parent": {"name":"spr_transition","path":"sprites/spr_transition/spr_transition.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_collision_box",
+    "name": "spr_transition",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":35.0,"displayName":"default","resourceVersion":"1.0","name":"0c3525f8-d466-4659-aba6-ca3235466e7e","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":29.0,"displayName":"default","resourceVersion":"1.0","name":"e63d1dc7-b612-4d8b-81a7-3dde40fab522","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_collision_box",
+  "name": "spr_transition",
   "tags": [],
   "resourceType": "GMSprite",
 }

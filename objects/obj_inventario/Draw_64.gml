@@ -12,14 +12,14 @@ draw_set_font(fnt_text_24);
 var c = c_black; 
 draw_text_color(info_x, info_y, info_grid[# 0, 3] + ": " + info_grid[# 1, 3], c,c,c,c, 1);
 
-draw_set_font(fnt_small_digits);
-var yy = 0; repeat(3){
-	draw_text_color(
-		info_x + (192*scale) + ((15+18)*scale*yy), info_y, 
-		string(info_grid[# 1, yy]), c,c,c,c, 1
-	);
-	yy += 1;
-}
+//draw_set_font(fnt_small_digits);
+//var yy = 0; repeat(3){
+//	draw_text_color(
+//		info_x + (192*scale) + ((15+18)*scale*yy), info_y, 
+//		string(info_grid[# 1, yy]), c,c,c,c, 1
+//	);
+//	yy += 1;
+//}
 
 //------Inventory
 var ii, ix, iy, xx, yy, sx, sy, iitem, inv_grid;
@@ -72,6 +72,18 @@ repeat(inv_slots){
 	ii += 1;
 	ix = ii mod inv_slots_width;
 	iy = ii div inv_slots_width;
+}
+ 
+
+//Draw Item Description
+var iinfo_grid = ds_items_info, description = "";
+iitem = inv_grid[# 0, selected_slot]; 
+
+if (iitem > 0) {
+	draw_set_font(fnt_text_12); 
+	description = iinfo_grid[# 0, iitem] + ". " + iinfo_grid[# 1, iitem];
+	c = c_black;
+	draw_text_ext_color(desc_x, desc_y, description, string_height("M"), inv_UI_width*scale - (x_buffer*2), c, c, c, c, 1);
 }
 
 if(pickup_slot != -1) {
