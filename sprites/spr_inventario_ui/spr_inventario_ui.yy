@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Inventario",
-    "path": "folders/Inventario.yy",
+    "path": "folders/Sprites/Inventario.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_inventario_ui",

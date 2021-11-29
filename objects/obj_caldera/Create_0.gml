@@ -1,12 +1,13 @@
-/// @description Cosas generales del inventario
+/// @description Insert description here
 // You can write your code in this editor
-depth = -1;
+/// @description Cosas generales del cldentario
+// You can write your code in this editor
 scale = 2;
-show_inventory = false;
+show_caldera = false;
 
-inv_slots = 17;
-inv_slots_width = 8;
-inv_slots_height = 3;
+cld_slots = 3;
+cld_slots_width = 3;
+cld_slots_height = 1;
 
 selected_slot = 0; //slot seleccionado
 pickup_slot = -1; //item cogido
@@ -22,26 +23,26 @@ gui_height = display_get_gui_height();
 
 cell_size = 32;
 
-inv_UI_width = 288; //dimensiones del inventario
-inv_UI_height = 192;
+cld_UI_width = 119; //dimensiones del cldentario
+cld_UI_height = 82;
 
-spr_inv_UI = spr_inventario_ui;
-spr_inv_items = spr_inventrario_items;
+spr_cld_UI = spr_caldera_ui;
+spr_cld_items = spr_inventrario_items;
 
-spr_inv_items_columns = sprite_get_width(spr_inv_items)/cell_size;
-spr_inv_items_rows = sprite_get_height(spr_inv_items)/cell_size;
+spr_cld_items_columns = sprite_get_width(spr_cld_items)/cell_size;
+spr_cld_items_rows = sprite_get_height(spr_cld_items)/cell_size;
 
-inv_UI_x = (gui_width * 0.5) - (inv_UI_width * 0.5 * scale); //posicion del inventario en la gui
-inv_UI_y = (gui_height * 0.5) - (inv_UI_height * 0.5 * scale);
+cld_UI_x = (gui_width * 0.90) - (cld_UI_width * 0.5 * scale); //posicion del inventarioen la gui
+cld_UI_y = (gui_height * 0.20) - (cld_UI_height * 0.5 * scale);
 
-info_x = inv_UI_x + (9 * scale); //posicion del apartado de info en la gui
-info_y = inv_UI_y + (9 * scale);
+info_x = cld_UI_x + (9 * scale); //posicion del apartado de info en la gui
+info_y = cld_UI_y + (9 * scale);
 
 slots_x = info_x; //posicion de los slots en la gui 
-slots_y = inv_UI_y + (40 * scale);
+slots_y = cld_UI_y + (40 * scale);
 
 desc_x = info_x; 
-desc_y = inv_UI_y + (156*scale);
+desc_y = cld_UI_y + (156*scale);
 
 //---------Player Info 
 //0 = GOLD 
@@ -53,40 +54,20 @@ ds_player_info = ds_grid_create(2, 4);
 ds_player_info[# 0, 0] = "Gold";
 ds_player_info[# 0, 1] = "Silver";
 ds_player_info[# 0, 2] = "Copper";
-ds_player_info[# 0, 3] = "Inventario";
+ds_player_info[# 0, 3] = "Caldera";
 
 ds_player_info[# 1, 0] = irandom_range(0,99);
 ds_player_info[# 1, 1] = irandom_range(0,99);
 ds_player_info[# 1, 2] = irandom_range(0,99);
 ds_player_info[# 1, 3] = "";
 
-//---------Inventory
+//---------caldera
 //0 = ITEM
 //1 = NUMBER
 
-ds_inventory = ds_grid_create(2, inv_slots);
+ds_caldera = ds_grid_create(2, cld_slots);
 
-//---------Items
-enum item {
-	none		= 0,
-	tomato		= 1,
-	potato		= 2,
-	carrot		= 3,
-	artichoke	= 4,
-	chilli		= 5,
-	gourd		= 6,
-	corn		= 7,
-	wood		= 8,
-	stone		= 9,
-	bucket		= 10,
-	chair		= 11, 
-	picture		= 12,
-	axe			= 13,
-	potion		= 14,
-	starfish	= 15,
-	mushroom	= 16,
-	height		= 17,
-}
+
 
 #region Create Items Info Grid
 ds_items_info = ds_grid_create(2, item.height);
@@ -133,13 +114,12 @@ ds_items_info[# z, i++] = "Mushroom";
 
 #endregion
 
-var yy = 0; repeat(inv_slots){
-	ds_inventory[# 0, yy] = irandom_range(1, item.height-1);
-	ds_inventory[# 1, yy] = irandom_range(1, 10);
+var yy = 0; repeat(cld_slots){
+	ds_caldera[# 0, yy] = irandom_range(1, item.height-1);
+	ds_caldera[# 1, yy] = irandom_range(1, 10);
 	
 	yy += 1;
 }
-
 
 
 

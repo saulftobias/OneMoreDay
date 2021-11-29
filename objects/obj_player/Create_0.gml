@@ -5,4 +5,4 @@ image_speed = 0;
 image_index = 0;
 
 
-v = 8; 
+v = 16; 

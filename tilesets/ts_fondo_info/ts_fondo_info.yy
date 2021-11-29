@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite13",
-    "path": "sprites/Sprite13/Sprite13.yy",
+    "name": "spr_fondo_info",
+    "path": "sprites/spr_fondo_info/spr_fondo_info.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,
@@ -52,7 +52,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "TileSet1",
+  "name": "ts_fondo_info",
   "tags": [],
   "resourceType": "GMTileSet",
 }
