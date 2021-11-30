@@ -17,6 +17,7 @@
     {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},"order":1,},
     {"id":{"name":"spr_inventario_ui","path":"sprites/spr_inventario_ui/spr_inventario_ui.yy",},"order":0,},
     {"id":{"name":"spr_transition","path":"sprites/spr_transition/spr_transition.yy",},"order":8,},
+    {"id":{"name":"Sprite18","path":"sprites/Sprite18/Sprite18.yy",},"order":16,},
     {"id":{"name":"spr_inventrario_items","path":"sprites/spr_inventrario_items/spr_inventrario_items.yy",},"order":1,},
     {"id":{"name":"spr_prueba_player_left","path":"sprites/spr_prueba_player_left/spr_prueba_player_left.yy",},"order":3,},
     {"id":{"name":"spr_prueba_player_rigth","path":"sprites/spr_prueba_player_rigth/spr_prueba_player_rigth.yy",},"order":2,},
