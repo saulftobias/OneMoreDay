@@ -29,9 +29,23 @@ else {
 
 switch (direction) {
 	case 0:
-		sprite_index = spr_prueba_player_rigth;
+		sprite_index = spr_player_rigth;
 		break;
 	case 180:
-		sprite_index = spr_prueba_player_left;
+		sprite_index = spr_player_left;
 		break;
+}
+
+//checkeo cambio habitacion
+
+var inst = instance_place(x, y, obj_transition);
+if (inst != noone) {
+	with(obj_control) {
+		if(!doTransition) {
+			spawnRoom = inst.targetRoom;
+			spawnX = inst.targetX;
+			spawnY = inst.targetY;
+			doTransition = true;
+		}
+	}
 }
