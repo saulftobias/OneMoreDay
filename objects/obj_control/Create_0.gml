@@ -2,10 +2,10 @@
 // You can write your code in this editor
 
 TiempoDia = 2;
-TiempoHambre = 3;
+TiempoHambre = 30;
 TiempoFrio = 3;
 
-debug = false;
+debug = true;
 randomize();
 room_goto(rm_comedor); 
 alarm[0] = room_speed * TiempoDia;
@@ -29,3 +29,25 @@ spawnX = 0;
 spawnY = 0;
 spawnPlayerFacing = -1;
 doTransition = false; 
+
+//---------Items
+enum item {
+	none		= 0,
+	tomato		= 1,
+	potato		= 2,
+	carrot		= 3,
+	artichoke	= 4,
+	chilli		= 5,
+	gourd		= 6,
+	corn		= 7,
+	wood		= 8,
+	stone		= 9,
+	bucket		= 10,
+	chair		= 11, 
+	picture		= 12,
+	axe			= 13,
+	potion		= 14,
+	starfish	= 15,
+	mushroom	= 16,
+	height		= 17,
+}

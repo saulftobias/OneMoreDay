@@ -40,6 +40,7 @@ selected_slot = min(inv_slots - 1 , m_slotx + (m_sloty*inv_slots_width)); //Indi
 //Pickup Item
 
 var inv_grid = ds_inventory;
+var inv_info = ds_items_info;
 var ss_item = inv_grid[# 0, selected_slot]; //item seleccionado
 
 if(pickup_slot != -1) {
@@ -78,6 +79,34 @@ if(pickup_slot != -1) {
 		}
 	}
 } 
+
+//Use item
+if (keyboard_check_pressed((ord("U")))) {
+	switch (inv_grid[# 0, selected_slot]) {
+		case (item.tomato):
+			global.HAMBRE += 10;
+			break;
+		
+		case (item.wood):
+			for (var i = 0; i < obj_caldera.cld_slots; i++) {
+				if (obj_caldera.ds_caldera[# 0, i] == item.wood)
+					obj_caldera.ds_caldera[# 1, i] += 1;
+			}
+			break;
+			
+		default:
+			break;
+	
+	}
+	inv_grid[# 1, selected_slot] -= 1;
+	
+}
+
+//Delete items when end uses
+
+if (inv_grid[# 1, selected_slot] < 1)
+	inv_grid[# 0, selected_slot] = 0;
+
 else if(ss_item != item.none) {
 	if(mouse_check_button_pressed(mb_right)) { 
 		pickup_slot = selected_slot;

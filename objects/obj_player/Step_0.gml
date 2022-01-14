@@ -29,10 +29,10 @@ else {
 
 switch (direction) {
 	case 0:
-		sprite_index = spr_prueba_player_rigth;
+		sprite_index = spr_player_rigth;
 		break;
 	case 180:
-		sprite_index = spr_prueba_player_left;
+		sprite_index = spr_player_left;
 		break;
 }
 

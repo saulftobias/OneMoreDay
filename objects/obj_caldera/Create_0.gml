@@ -5,6 +5,13 @@
 scale = 2;
 show_caldera = false;
 
+encendida = false;
+//Tiempos de consumo de combustibles
+tiempoMadera = 10;
+tiempoCarbon = 4;
+tiempoCarbonVegetal = 4;
+alarm[0] = room_speed * tiempoMadera;
+
 cld_slots = 3;
 cld_slots_width = 3;
 cld_slots_height = 1;
@@ -75,51 +82,29 @@ ds_items_info = ds_grid_create(2, item.height);
 //--Item Names
 var z = 0, i = 0;
 ds_items_info[# z, i++] = "Nothing";
-ds_items_info[# z, i++] = "Tomato";
-ds_items_info[# z, i++] = "Potato";
-ds_items_info[# z, i++] = "Carrot";
-ds_items_info[# z, i++] = "Artichoke";
-ds_items_info[# z, i++] = "Chilli";
-ds_items_info[# z, i++] = "Gourd";
-ds_items_info[# z, i++] = "Corn";
 ds_items_info[# z, i++] = "Wood";
-ds_items_info[# z, i++] = "Stone"; 
-ds_items_info[# z, i++] = "Bucket"
-ds_items_info[# z, i++] = "Chair";
-ds_items_info[# z, i++] = "Picture";
-ds_items_info[# z, i++] = "Axe";
-ds_items_info[# z, i++] = "Potion";
-ds_items_info[# z, i++] = "Starfish";
-ds_items_info[# z, i++] = "Mushroom";
+ds_items_info[# z, i++] = "Tomato";
+ds_items_info[# z, i++] = "Carrot";
+
 
 //--Item Descriptions
 z = 1; i = 0;
 ds_items_info[# z, i++] = "Nothing";
-ds_items_info[# z, i++] = "Tomato";
-ds_items_info[# z, i++] = "Potato";
-ds_items_info[# z, i++] = "Victor viñas es un marica dibuja pistolas";
-ds_items_info[# z, i++] = "Artichoke";
-ds_items_info[# z, i++] = "Chilli";
-ds_items_info[# z, i++] = "Gourd";
-ds_items_info[# z, i++] = "Corn";
 ds_items_info[# z, i++] = "Wood";
-ds_items_info[# z, i++] = "Stone"; 
-ds_items_info[# z, i++] = "Bucket"
-ds_items_info[# z, i++] = "Chair";
-ds_items_info[# z, i++] = "Picture";
-ds_items_info[# z, i++] = "Axe";
-ds_items_info[# z, i++] = "Potion";
-ds_items_info[# z, i++] = "Starfish";
-ds_items_info[# z, i++] = "Mushroom";
+ds_items_info[# z, i++] = "Tomato";
+ds_items_info[# z, i++] = "Victor viñas es un marica dibuja pistolas";
 
 #endregion
 
-var yy = 0; repeat(cld_slots){
-	ds_caldera[# 0, yy] = irandom_range(1, item.height-1);
-	ds_caldera[# 1, yy] = irandom_range(1, 10);
+
+ds_caldera[# 0, 0] = item.wood;
+ds_caldera[# 1, 0] = irandom_range(1, 4);
+ds_caldera[# 0, 1] = item.tomato;
+ds_caldera[# 1, 1] = irandom_range(1, 4);
+ds_caldera[# 0, 2] = item.carrot;
+ds_caldera[# 1, 2] = irandom_range(1, 4);
 	
-	yy += 1;
-}
+
 
 
 

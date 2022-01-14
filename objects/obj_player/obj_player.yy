@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_prueba_player_rigth",
-    "path": "sprites/spr_prueba_player_rigth/spr_prueba_player_rigth.yy",
+    "name": "spr_player_rigth",
+    "path": "sprites/spr_player_rigth/spr_player_rigth.yy",
   },
   "solid": false,
   "visible": true,

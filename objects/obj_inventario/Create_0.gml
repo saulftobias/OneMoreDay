@@ -66,27 +66,7 @@ ds_player_info[# 1, 3] = "";
 
 ds_inventory = ds_grid_create(2, inv_slots);
 
-//---------Items
-enum item {
-	none		= 0,
-	tomato		= 1,
-	potato		= 2,
-	carrot		= 3,
-	artichoke	= 4,
-	chilli		= 5,
-	gourd		= 6,
-	corn		= 7,
-	wood		= 8,
-	stone		= 9,
-	bucket		= 10,
-	chair		= 11, 
-	picture		= 12,
-	axe			= 13,
-	potion		= 14,
-	starfish	= 15,
-	mushroom	= 16,
-	height		= 17,
-}
+
 
 #region Create Items Info Grid
 ds_items_info = ds_grid_create(2, item.height);
@@ -114,7 +94,7 @@ ds_items_info[# z, i++] = "Mushroom";
 //--Item Descriptions
 z = 1; i = 0;
 ds_items_info[# z, i++] = "Nothing";
-ds_items_info[# z, i++] = "Tomato";
+ds_items_info[# z, i++] = "Focavi";
 ds_items_info[# z, i++] = "Potato";
 ds_items_info[# z, i++] = "Victor viñas es un marica dibuja pistolas";
 ds_items_info[# z, i++] = "Artichoke";
@@ -125,11 +105,11 @@ ds_items_info[# z, i++] = "Wood";
 ds_items_info[# z, i++] = "Stone"; 
 ds_items_info[# z, i++] = "Bucket"
 ds_items_info[# z, i++] = "Chair";
-ds_items_info[# z, i++] = "Picture";
+ds_items_info[# z, i++] = "Una foto de la puta madre de pinguino";
 ds_items_info[# z, i++] = "Axe";
 ds_items_info[# z, i++] = "Potion";
 ds_items_info[# z, i++] = "Starfish";
-ds_items_info[# z, i++] = "Mushroom";
+ds_items_info[# z, i++] = "Setita victor viñas marica zanahoria ñam mejora la vista";
 
 #endregion
 
