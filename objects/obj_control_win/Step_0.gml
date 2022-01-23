@@ -1,8 +1,8 @@
-if(!global.SALIDA) exit;
+if(!global.WIN) exit;
 
 input_up_p		= keyboard_check_pressed(global.KEY_UP);
 input_down_p	= keyboard_check_pressed(global.KEY_DOWN);
-input_enter_p	= keyboard_check_released(global.KEY_ENTER);
+input_enter_p	= keyboard_check_pressed(global.KEY_ENTER);
 
 var ds_grid  = menu_pages[page], ds_height = ds_grid_height(ds_grid);
 
@@ -67,6 +67,4 @@ if (input_enter_p) {
 			global.INPUTTING = !global.INPUTTING
 			break;
 	}
-	
-	// TODO se puede meter audio a las transiciones si quereis @vitu @ferto
 }

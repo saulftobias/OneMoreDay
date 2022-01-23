@@ -6,7 +6,7 @@ switch(argument0) {
 	case 1:
 	
 		if (global.DIAS_GANAR == global.DIAS) {
-		//ganar
+			global.WIN = true;
 		}
 	
 	

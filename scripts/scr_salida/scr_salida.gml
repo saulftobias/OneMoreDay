@@ -15,7 +15,7 @@ switch(argument0) {
 		}
 		
 		if (global.DIAS_GANAR == global.DIAS) {
-			//ganar
+			global.WIN = true;
 		}
 		
 		if (global.CANSANCIO  <= 0) {
