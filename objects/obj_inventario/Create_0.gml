@@ -113,7 +113,7 @@ ds_items_info[# z, i++] = "Setita victor viñas marica zanahoria ñam mejora la 
 
 #endregion
 
-var yy = 0; repeat(inv_slots){
+var yy = 0; repeat(3) {
 	ds_inventory[# 0, yy] = irandom_range(1, item.height-1);
 	ds_inventory[# 1, yy] = irandom_range(1, 10);
 	
