@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-TiempoDia = 2;
+TiempoDia = 1;
 TiempoHambre = 30;
 TiempoFrio = 3;
 
@@ -19,11 +19,15 @@ global.CANSANCIO = 100;
 global.FRIO = 100;
 global.CALDERA = 0;
 
+global.ITEMS_DROP = 5; //TODO Dificultades facil 5 hard 3
+global.MULT_DIF = 3; //Dificultades Facil 3 dif 1
+
 
 guiWidth = display_get_gui_width();
 guiHeigth = display_get_gui_height();  
 blackAlpha = 0; 
 
+dormido = false;
 spawnRoom = -1; 
 spawnX = 0;
 spawnY = 0;
