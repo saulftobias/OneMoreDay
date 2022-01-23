@@ -84,7 +84,10 @@ if(pickup_slot != -1) {
 if (keyboard_check_pressed((ord("U")))) {
 	switch (inv_grid[# 0, selected_slot]) {
 		case (item.tomato):
-			global.HAMBRE += 10;
+			if (global.HAMBRE < 90)
+				global.HAMBRE += 10;
+			else
+				global.HAMBRE = 100;
 			break;
 		
 		case (item.wood):

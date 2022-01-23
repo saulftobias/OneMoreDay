@@ -1,4 +1,4 @@
-if(!show_caldera and room != 1) exit;
+if(!show_caldera and room != 1 or global.PAUSE) exit;
 
 //-------caldera Back
 draw_sprite_part_ext(
