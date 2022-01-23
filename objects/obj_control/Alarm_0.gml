@@ -1,6 +1,8 @@
 /// @description Paso del tiempo
 // You can write your code in this editor
-global.HORA = global.HORA + 1;
+if (!global.PAUSE) {
+	global.HORA = global.HORA + 1;
+}
 if (global.HORA == 12) {
 	global.HORA = 0;
 	global.DIAS = global.DIAS + 1;
