@@ -5,20 +5,13 @@ if (!global.PAUSE) {
 }
 if (global.HORA == 12) {
 	
-	//LLAMAR MENU
-	
 	global.HORA = 0;
 	global.DIAS = global.DIAS + 1;
 	global.CANSANCIO = global.CANSANCIO - 30;
 	
-	spawnRoom = rm_habitacion; //Tiene que ser el dormitorio
-	spawnX = 64; // Posicion de la cama
-	spawnY = 336;
-	dormido = true;
-	doTransition = true;
-	
-	
 	alarm[0] = room_speed * TiempoDia;
+	global.PAUSE = true;
+	global.A_LA_CAMA = true;
 } else {
 	alarm[0] = room_speed * TiempoDia;
 }
