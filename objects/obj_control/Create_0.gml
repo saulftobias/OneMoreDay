@@ -5,7 +5,6 @@ TiempoDia = 10;
 TiempoHambre = 30;
 TiempoFrio = 3;
 
-debug = true;
 randomize();
 room_goto(rm_comedor); 
 alarm[0] = room_speed * TiempoDia;

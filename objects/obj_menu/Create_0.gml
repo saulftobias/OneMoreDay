@@ -2,7 +2,6 @@
 
 global.VIEW_WIDTH	= camera_get_view_width(view_camera[0]);
 global.VIEW_HEIGTH	= camera_get_view_height(view_camera[0]);
-global.DEBBUG		= true;
 
 global.PAUSE		 = true;
 global.MENU			 = true;
@@ -54,8 +53,7 @@ ds_menu_audio = scr_create_menu_page(
 );
 
 ds_menu_difficulty = scr_create_menu_page(
-	["ENEMIES",		menu_element_type.shift,			scr_change_difficulty,	0,		["EASY", "MED", "HARD"]], //TODO cambiar nombres
-	["ALLIES",		menu_element_type.shift,			scr_change_difficulty,	0,		["EASY", "MED", "HARD"]],
+	["DIFFICULTY",		menu_element_type.shift,		scr_change_dificulty,	0,		["EASY", "MED", "HARD"]], //TODO cambiar nombres
 	["BACK",		menu_element_type.page_transfer,	menu_page.settings]
 );
 
