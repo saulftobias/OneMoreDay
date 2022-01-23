@@ -9,6 +9,10 @@ if (global.HORA == 12) {
 		global.MUERTE = true;
 	} 
 	
+	if (global.DIAS_GANAR == global.DIAS) {
+	//ganar
+	}
+	
 	global.HORA = 0;
 	global.DIAS = global.DIAS + 1;
 	global.CANSANCIO = global.CANSANCIO - 30;

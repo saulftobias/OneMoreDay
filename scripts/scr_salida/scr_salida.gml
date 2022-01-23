@@ -5,7 +5,30 @@ switch(argument0) {
 		break;
 	case 1:
 		show_debug_message("a salir");
-		global.CANSANCIO -= 30;
+		
+		if (global.DIAS_GANAR == global.DIAS) {
+			//ganar
+		}
+		
+		if (global.CANSANCIO  <= 0) {
+			global.MUERTE = true;
+		}
+		
+		if (global.CANSANCIO < 40) {
+			if (random_range(0,1) == 1) global.MUERTE = true;
+		}
+		
+		if (global.HAMBRE <= 0 or global.FRIO <= 0) {
+			global.MUERTE = true;
+		}
+		
+		global.CANSANCIO -= 45;
+		global.HAMBRE -= 25;
+		if (global.HAMBRE < 0) { global.HAMBRE = 0;}
+		global.HORA = 0;
+		global.DIAS = global.DIAS + 1;
+		
+
 		
 		with(obj_inventario) {
 			repeat(3 + global.MULT_DIF){

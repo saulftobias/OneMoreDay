@@ -1,9 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-TiempoDia = 1;
-TiempoHambre = 30;
-TiempoFrio = 15;
+TiempoDia = 4;
+TiempoHambre = 10;
+TiempoFrio = 8;
+
+//global.DIAS_GANAR = random_range(15, 25);
+global.DIAS_GANAR = 3;
 
 randomize();
 room_goto(rm_comedor); 
