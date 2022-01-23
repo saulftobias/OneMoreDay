@@ -1,4 +1,4 @@
-if(!global.SALIDA) exit;
+if(!global.MUERTE) exit;
 
 var gwidth	 = global.VIEW_WIDTH, gheight  = global.VIEW_HEIGTH;
 
@@ -17,7 +17,7 @@ draw_rectangle_color(0, 0, gwidth, gheight, c, c, c, c, false);
 draw_set_valign(fa_middle);
 draw_set_halign(fa_right);
 
-var ltx = start_x - x_buffer, lty, xo;
+var ltx = start_x - x_buffer, lty, xo, xx;
 
 var yy = 0;
 repeat(ds_height) {
@@ -29,13 +29,15 @@ repeat(ds_height) {
 		c = c_orange;
 		xo = -(x_buffer/2);
 	}
+	xx = yy*(-50);
 	
-	draw_text_color(ltx + xo, lty, ds_grid[# 0, yy], c, c, c, c, 1);
+	draw_text_color(770, 200, "HAS MUERTO", c_white, c_white, c_white, c_white, 1);
+	draw_text_color(ltx + xo + 100 + xx, lty, ds_grid[# 0, yy], c, c, c, c, 1);
 	yy++;
 }
 
 // Draw Dividing Line
-draw_line(start_x, start_y - y_buffer, start_x, lty + y_buffer);
+//draw_line(start_x, start_y - y_buffer, start_x, lty + y_buffer);
 
 // Draw Elements on Rigth side
 
@@ -90,7 +92,7 @@ repeat(ds_height) {
 				c1 = c_gray;
 				c2 = c;
 			}
-			draw_text_color(100, 200, "Saliendo de casa conseguiras mas objetos pero perderas estamina", c_white, c_white, c_white, c_white, 1);
+			draw_text_color(150, 200, "Saliendo de casa conseguiras mas objetos pero perderas estamina", c_white, c_white, c_white, c_white, 1);
 			draw_text_color(rtx, rty, "NO", c1, c1, c1, c1, 1);
 			draw_text_color(rtx + 64, rty, "SI", c2, c2, c2, c2, 1);
 			break;
