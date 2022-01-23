@@ -1,4 +1,4 @@
-if(!show_inventory) exit;
+if(!show_inventory or global.PAUSE) exit;
 
 //-------Inventory Back
 draw_sprite_part_ext(

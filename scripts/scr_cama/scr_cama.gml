@@ -19,7 +19,7 @@ switch(argument0) {
 		global.CANSANCIO += 40;
 		if (global.CANSANCIO > 100) { global.CANSANCIO = 100;}
 		
-		global.HAMBRE -= 30;
+		global.HAMBRE -= 20;
 		if (global.HAMBRE < 0) { global.HAMBRE = 0;}
 		
 		global.CAMA = false;

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-TiempoDia = 1;
+TiempoDia = 10;
 TiempoHambre = 30;
 TiempoFrio = 3;
 

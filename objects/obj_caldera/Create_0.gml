@@ -98,11 +98,11 @@ ds_items_info[# z, i++] = "Victor viñas es un marica dibuja pistolas";
 
 
 ds_caldera[# 0, 0] = item.wood;
-ds_caldera[# 1, 0] = irandom_range(1, 4);
+ds_caldera[# 1, 0] = 0;
 ds_caldera[# 0, 1] = item.tomato;
-ds_caldera[# 1, 1] = irandom_range(1, 4);
+ds_caldera[# 1, 1] = 0;
 ds_caldera[# 0, 2] = item.carrot;
-ds_caldera[# 1, 2] = irandom_range(1, 4);
+ds_caldera[# 1, 2] = 0;
 	
 
 
