@@ -8,7 +8,7 @@ if (global.HORA == 12) {
 	if (global.CANSANCIO = 0 or global.HAMBRE = 0 or global.FRIO = 0) {
 	
 		//PARTIDA PERDIDA
-	}
+	} 
 	
 	//LLAMAR MENU
 	

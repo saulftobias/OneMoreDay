@@ -19,7 +19,7 @@ global.FRIO = 100;
 global.CALDERA = 0;
 
 global.ITEMS_DROP = 5; //TODO Dificultades facil 5 hard 3
-global.MULT_DIF = 3; //Dificultades Facil 3 dif 1
+global.MULT_DIF = 1; //Dificultades Facil 3 dif 1
 
 
 guiWidth = display_get_gui_width();
