@@ -54,13 +54,16 @@ if (inst != noone) {
 
 // Interaccion con elementos
 if (keyboard_check_pressed(ord("E"))) {
-	global.PAUSE = true;
 	var salida	= scr_get_facing_object(obj_puerta_salida);
 	var cama	= scr_get_facing_object(obj_cama);
 	if (salida) {
 		global.SALIDA = true;
-	}
+		global.PAUSE = true;
+		speed = 0;
+	} 
 	if (cama) {
 		global.CAMA = true;
+		global.PAUSE = true;
+		speed = 0;
 	}
 }
