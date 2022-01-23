@@ -6,11 +6,8 @@ if (!global.PAUSE) {
 if (global.HORA == 12) {
 	
 	if (global.CANSANCIO = 0 or global.HAMBRE = 0 or global.FRIO = 0) {
-	
-		//PARTIDA PERDIDA
+		global.MUERTE = true;
 	} 
-	
-	//LLAMAR MENU
 	
 	global.HORA = 0;
 	global.DIAS = global.DIAS + 1;
