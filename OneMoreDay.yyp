@@ -42,7 +42,6 @@
     {"id":{"name":"fnt_text_24","path":"fonts/fnt_text_24/fnt_text_24.yy",},"order":1,},
     {"id":{"name":"obj_inventario","path":"objects/obj_inventario/obj_inventario.yy",},"order":0,},
     {"id":{"name":"spr_reloj","path":"sprites/spr_reloj/spr_reloj.yy",},"order":8,},
-    {"id":{"name":"spr_player_left","path":"sprites/spr_player_left/spr_player_left.yy",},"order":13,},
     {"id":{"name":"spr_item","path":"sprites/spr_item/spr_item.yy",},"order":5,},
     {"id":{"name":"spr_inventario_slot","path":"sprites/spr_inventario_slot/spr_inventario_slot.yy",},"order":4,},
     {"id":{"name":"spr_caldera","path":"sprites/spr_caldera/spr_caldera.yy",},"order":9,},
