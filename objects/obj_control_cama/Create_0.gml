@@ -12,7 +12,7 @@ enum menu_element_type2 {
 
 // MENU PAGES
 ds_menu_salir = scr_create_menu_page(
-	["DESEA DORMIR?",		menu_element_type.toggle,	scr_cama,		0,	["NO","SI"]]
+	["DESEA DORMIR?",		menu_element_type2.toggle,	scr_cama,		0,	["NO","SI"]]
 );
 
 
