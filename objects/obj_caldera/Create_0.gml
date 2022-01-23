@@ -5,12 +5,12 @@
 scale = 2;
 show_caldera = false;
 
-encendida = false;
 //Tiempos de consumo de combustibles
 tiempoMadera = 10;
 tiempoCarbon = 4;
 tiempoCarbonVegetal = 4;
-alarm[0] = room_speed * tiempoMadera;
+sprite_index = spr_caldera_off;
+alarm[0] = room_speed; 
 
 cld_slots = 3;
 cld_slots_width = 3;

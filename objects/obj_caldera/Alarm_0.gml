@@ -9,6 +9,7 @@ for (var i = 0; i < cld_slots; i += 1) {
 	//El primer slot con items es el que utilizo
 	if (inv_grid[# 1, i] > 0) {
 		global.CALDERA = true;
+		sprite_index = spr_caldera;
 		//Resto el item a utilizar
 		inv_grid[# 1, i] -= 1;
 		//Aplico los cambios surtidos por el item
@@ -38,6 +39,7 @@ for (var i = 0; i < cld_slots; i += 1) {
 		break;
 	} else {
 		global.CALDERA = false;
-		alarm[0] = room_speed * 2;
+		sprite_index = spr_caldera_off;
+		alarm[0] = room_speed;
 	}
 }

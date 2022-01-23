@@ -112,14 +112,16 @@ ds_items_info[# z, i++] = "Starfish";
 ds_items_info[# z, i++] = "Setita victor viñas marica zanahoria ñam mejora la vista";
 
 #endregion
-
+/*
 var yy = 0; repeat(3) {
 	ds_inventory[# 0, yy] = irandom_range(1, item.height-1);
 	ds_inventory[# 1, yy] = irandom_range(1, 10);
 	
 	yy += 1;
 }
-
+*/
+ds_inventory[# 0, 0] = item.wood;
+ds_inventory[# 1, 0] = 8;
 
 
 

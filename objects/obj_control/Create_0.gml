@@ -3,7 +3,7 @@
 
 TiempoDia = 10;
 TiempoHambre = 30;
-TiempoFrio = 3;
+TiempoFrio = 15;
 
 randomize();
 room_goto(rm_comedor); 

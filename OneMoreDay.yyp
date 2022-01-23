@@ -12,6 +12,7 @@
     {"id":{"name":"spr_collision_box","path":"sprites/spr_collision_box/spr_collision_box.yy",},"order":0,},
     {"id":{"name":"scr_change_volume","path":"scripts/scr_change_volume/scr_change_volume.yy",},"order":2,},
     {"id":{"name":"rm_habitacion","path":"rooms/rm_habitacion/rm_habitacion.yy",},"order":1,},
+    {"id":{"name":"spr_caldera_off","path":"sprites/spr_caldera_off/spr_caldera_off.yy",},"order":18,},
     {"id":{"name":"scr_save_game","path":"scripts/scr_save_game/scr_save_game.yy",},"order":7,},
     {"id":{"name":"scr_change_resolution","path":"scripts/scr_change_resolution/scr_change_resolution.yy",},"order":1,},
     {"id":{"name":"scr_change_dificulty","path":"scripts/scr_change_dificulty/scr_change_dificulty.yy",},"order":0,},
@@ -100,7 +101,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.7.606",
+    "IDEVersion": "2.3.6.595",
   },
   "resourceVersion": "1.4",
   "name": "OneMoreDay",

@@ -5,8 +5,7 @@ switch(argument0) {
 		break;
 	case 1:
 		show_debug_message("a salir");
-		global.CANSANCIO -= 40;
-		global.CANSANCIO -= 20;
+		global.CANSANCIO -= 30;
 		
 		with(obj_inventario) {
 			repeat(3 + global.MULT_DIF){
