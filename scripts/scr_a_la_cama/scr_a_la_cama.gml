@@ -1,3 +1,4 @@
+show_debug_message("prueba");
 global.A_LA_CAMA = false;
 global.PAUSE = false;
 

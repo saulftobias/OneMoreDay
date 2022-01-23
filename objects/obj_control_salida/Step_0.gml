@@ -2,7 +2,7 @@ if(!global.SALIDA) exit;
 
 input_up_p		= keyboard_check_pressed(global.KEY_UP);
 input_down_p	= keyboard_check_pressed(global.KEY_DOWN);
-input_enter_p	= keyboard_check_pressed(global.KEY_ENTER);
+input_enter_t	= keyboard_check_pressed(global.KEY_ENTER);
 
 var ds_grid  = menu_pages[page], ds_height = ds_grid_height(ds_grid);
 
@@ -55,7 +55,7 @@ if (!global.INPUTTING) {
 	}
 }
 
-if (input_enter_p) {
+if (input_enter_t) {
 	switch (ds_grid[# 1, menu_option[page]]) {
 		case menu_element_type.script_runner:	script_execute(ds_grid[# 2, menu_option[page]]); break;
 		case menu_element_type.page_transfer:	page = ds_grid[# 2, menu_option[page]];	break;
