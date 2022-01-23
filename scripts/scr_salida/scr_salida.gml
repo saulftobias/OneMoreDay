@@ -6,6 +6,14 @@ switch(argument0) {
 	case 1:
 		show_debug_message("a salir");
 		
+		with(obj_control) {
+			spawnRoom = rm_entrada; //Tiene que ser el dormitorio
+			spawnX = 64; // Posicion de la cama
+			spawnY = 336;
+			dormido = true;
+			doTransition = true;
+		}
+		
 		if (global.DIAS_GANAR == global.DIAS) {
 			//ganar
 		}

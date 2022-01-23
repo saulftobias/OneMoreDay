@@ -13,7 +13,7 @@ enum menu_element_type1 {
 
 // MENU PAGES
 ds_menu_salir = scr_create_menu_page(
-	["DESEA SALIR?",		menu_element_type.toggle,	scr_salida,		0,	["NO","SI"]]
+	["DESEA SALIR?",		menu_element_type1.toggle,	scr_salida,		0,	["NO","SI"]]
 );
 
 
