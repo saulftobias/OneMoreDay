@@ -55,7 +55,7 @@ if (!global.INPUTTING) {
 	}
 }
 
-if (input_enter_p) {
+if (input_enter_t) {
 	switch (ds_grid[# 1, menu_option[page]]) {
 		case menu_element_type.script_runner:	script_execute(ds_grid[# 2, menu_option[page]]); break;
 		case menu_element_type.page_transfer:	page = ds_grid[# 2, menu_option[page]];	break;
