@@ -1,12 +1,16 @@
 /// @description Fundido negro entre habitaciones 
 // You can write your code in this editor
+
 if(doTransition) {
 	//Handle balack fade
-	if(room != spawnRoom) {
-		blackAlpha += 0.1;
-		if(blackAlpha >= 1) { room_goto(spawnRoom) }
+	if(room != spawnRoom or dormido) {
+		blackAlpha += 0.02;
+		if(blackAlpha >= 1) { 
+			room_goto(spawnRoom);
+			dormido = false;
+		}
 	} else {
-		blackAlpha -= 0.1;
+		blackAlpha -= 0.02;
 		if(blackAlpha <= 0) { doTransition = false; }
 	}
 	
