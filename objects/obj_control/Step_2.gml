@@ -5,6 +5,6 @@ if (keyboard_check_pressed(vk_escape)) {
 	global.PAUSE = !global.PAUSE;
 }
 
-if (global.MUERTE) {
+if (global.MUERTE or global.WIN) {
 	global.PAUSE = true;
 }

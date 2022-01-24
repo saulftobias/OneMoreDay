@@ -9,6 +9,7 @@ global.SALIDA		 = false;
 global.CAMA			 = false;
 global.A_LA_CAMA	 = false;
 global.MUERTE		 = false;
+global.WIN			 = false;
 global.KEY_ENTER	 = vk_enter;
 global.KEY_INVENTORY = ord("I");
 global.KEY_LEFT		 = vk_left;
@@ -35,6 +36,7 @@ ds_menu_main = scr_create_menu_page(
 	["RESUME",		menu_element_type.script_runner,	scr_resume_game],
 	["SAVE GAME",	menu_element_type.script_runner,	scr_save_game],
 	["RELOAD",		menu_element_type.script_runner,	scr_reload_game],
+	["NEW GAME",	menu_element_type.script_runner,	scr_new_game],
 	["SETTINGS",	menu_element_type.page_transfer,	menu_page.settings],
 	["EXIT GAME",	menu_element_type.script_runner,	scr_exit_game]
 );

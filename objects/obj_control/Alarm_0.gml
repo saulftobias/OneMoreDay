@@ -10,7 +10,7 @@ if (global.HORA == 12) {
 	} 
 	
 	if (global.DIAS_GANAR == global.DIAS) {
-	//ganar
+		global.WIN = true;
 	}
 	
 	global.HORA = 0;
