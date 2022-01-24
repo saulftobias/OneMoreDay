@@ -21,6 +21,8 @@ if (global.INPUTTING) {
 			if (hinput != 0) {
 				ds_grid[# 3, menu_option[page]] += hinput * 0.01;
 				ds_grid[# 3, menu_option[page]] = clamp(ds_grid[# 3, menu_option[page]], 0, 1);
+				show_debug_message(ds_grid[# 3, menu_option[page]]);
+				global.SONIDO = ds_grid[# 3, menu_option[page]];
 			}
 			break;
 		case menu_element_type.toggle:

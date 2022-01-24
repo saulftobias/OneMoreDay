@@ -1,3 +1,4 @@
+
 switch(argument0) {
 	case 0:	//EASY
 		global.MULT_DIF = 3;
