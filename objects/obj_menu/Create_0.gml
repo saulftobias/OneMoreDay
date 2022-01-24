@@ -22,6 +22,7 @@ global.KEY_DOWN		 = vk_down;
 
 
 global.INPUTTING	= false;
+global.SONIDO		= 0.5;
 
 
 display_set_gui_size(global.VIEW_WIDTH, global.VIEW_HEIGTH);
@@ -54,8 +55,8 @@ ds_settings = scr_create_menu_page(
 
 ds_menu_audio = scr_create_menu_page(
 	["MASTER",		menu_element_type.slider,			scr_change_volume,		0.5,		[0, 1]],
-	["SOUNDS",		menu_element_type.slider,			scr_change_volume,		0.2,		[0, 1]],
-	["MUSIC",		menu_element_type.slider,			scr_change_volume,		1,			[0, 1]],
+	//["SOUNDS",	menu_element_type.slider,			scr_change_volume,		0.2,		[0, 1]],
+	//["MUSIC",		menu_element_type.slider,			scr_change_volume,		1,			[0, 1]],
 	["BACK",		menu_element_type.page_transfer,	menu_page.settings]
 );
 
