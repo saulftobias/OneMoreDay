@@ -20,7 +20,6 @@ if (!global.PAUSE) {
 //Animacion movimiento
 
 if speed > 0 {
-	audio_play_sound(snd_andar, 10, false)
 	image_speed = 1;
 }
 else {
