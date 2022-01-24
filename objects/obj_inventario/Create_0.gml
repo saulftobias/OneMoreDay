@@ -74,42 +74,28 @@ ds_items_info = ds_grid_create(2, item.height);
 //--Item Names
 var z = 0, i = 0;
 ds_items_info[# z, i++] = "Nothing";
-ds_items_info[# z, i++] = "Tomato";
-ds_items_info[# z, i++] = "Potato";
-ds_items_info[# z, i++] = "Carrot";
-ds_items_info[# z, i++] = "Artichoke";
-ds_items_info[# z, i++] = "Chilli";
-ds_items_info[# z, i++] = "Gourd";
-ds_items_info[# z, i++] = "Corn";
-ds_items_info[# z, i++] = "Wood";
-ds_items_info[# z, i++] = "Stone"; 
-ds_items_info[# z, i++] = "Bucket"
-ds_items_info[# z, i++] = "Chair";
-ds_items_info[# z, i++] = "Picture";
-ds_items_info[# z, i++] = "Axe";
-ds_items_info[# z, i++] = "Potion";
-ds_items_info[# z, i++] = "Starfish";
-ds_items_info[# z, i++] = "Mushroom";
+ds_items_info[# z, i++] = "Straw";
+ds_items_info[# z, i++] = "Wood logs";
+ds_items_info[# z, i++] = "Coal";
+ds_items_info[# z, i++] = "Raw meat";
+ds_items_info[# z, i++] = "Cooked meat";
+ds_items_info[# z, i++] = "Expired meat";
+ds_items_info[# z, i++] = "Can";
+ds_items_info[# z, i++] = "Apple";
+ds_items_info[# z, i++] = "Soup"; 
 
 //--Item Descriptions
 z = 1; i = 0;
 ds_items_info[# z, i++] = "Nothing";
-ds_items_info[# z, i++] = "Focavi";
-ds_items_info[# z, i++] = "Potato";
-ds_items_info[# z, i++] = "Victor viñas es un marica dibuja pistolas";
-ds_items_info[# z, i++] = "Artichoke";
-ds_items_info[# z, i++] = "Chilli";
-ds_items_info[# z, i++] = "Gourd";
-ds_items_info[# z, i++] = "Corn";
-ds_items_info[# z, i++] = "Wood";
-ds_items_info[# z, i++] = "Stone"; 
-ds_items_info[# z, i++] = "Bucket"
-ds_items_info[# z, i++] = "Chair";
-ds_items_info[# z, i++] = "Una foto de la puta madre de pinguino";
-ds_items_info[# z, i++] = "Axe";
-ds_items_info[# z, i++] = "Potion";
-ds_items_info[# z, i++] = "Starfish";
-ds_items_info[# z, i++] = "Setita victor viñas marica zanahoria ñam mejora la vista";
+ds_items_info[# z, i++] = "Low quality fuel";
+ds_items_info[# z, i++] = "Mid quality fuel";
+ds_items_info[# z, i++] = "High quality fuel";
+ds_items_info[# z, i++] = "Raw food, may decrease stamina and hunger";
+ds_items_info[# z, i++] = "Cooked food, decreases hunger";
+ds_items_info[# z, i++] = "Expired food, decreases hunger, may generate some illnes";
+ds_items_info[# z, i++] = "Can of preserves, decreases hunger. Previously was an MP5 or something like that";
+ds_items_info[# z, i++] = "Fruit, decreases hunger";
+ds_items_info[# z, i++] = "Soup, decreases hunger and decreases cold level"; 
 
 #endregion
 /*
@@ -121,7 +107,9 @@ var yy = 0; repeat(3) {
 }
 */
 ds_inventory[# 0, 0] = item.wood;
-ds_inventory[# 1, 0] = 8;
+ds_inventory[# 1, 0] = 3;
+ds_inventory[# 0, 1] = item.apple;
+ds_inventory[# 1, 1] = 3;
 
 
 

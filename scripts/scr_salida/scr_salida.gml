@@ -11,6 +11,7 @@ switch(argument0) {
 			spawnX = 64; // Posicion de la cama
 			spawnY = 336;
 			dormido = true;
+			if (!audio_is_playing(snd_puerta)) audio_play_sound(snd_puerta, 10, false);
 			doTransition = true;
 		}
 		
@@ -39,7 +40,7 @@ switch(argument0) {
 
 		
 		with(obj_inventario) {
-			repeat(3 + global.MULT_DIF){
+			repeat(1 + global.MULT_DIF){
 				var xx = 0; repeat(inv_slots) {
 					if (ds_inventory[# 0, xx] = item.none) {
 						ds_inventory[# 0, xx] = irandom_range(1, item.height-1);

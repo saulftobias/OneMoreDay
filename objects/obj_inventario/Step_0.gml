@@ -83,13 +83,72 @@ if(pickup_slot != -1) {
 //Use item
 if (keyboard_check_pressed((ord("U")))) {
 	switch (inv_grid[# 0, selected_slot]) {
-		case (item.tomato):
+		case (item.cooked_meat):
+			if (global.HAMBRE < 80)
+				global.HAMBRE += 20;
+			else
+				global.HAMBRE = 100;
+			break;
+		
+		case (item.raw_meat):
+			if (global.HAMBRE < 95)
+				global.HAMBRE += 5;
+			else
+				global.HAMBRE = 100;
+			break;
+			
+		case (item.expired_meat):
+			if (global.HAMBRE < 98)
+				global.HAMBRE += 2;
+			else
+				global.HAMBRE = 100;
+			if (global.CANSANCIO > 10)
+				global.CANSANCIO -= 10;
+			else
+				global.CANSANCIO = 0;
+			break;
+		
+		case (item.apple):
 			if (global.HAMBRE < 90)
 				global.HAMBRE += 10;
 			else
 				global.HAMBRE = 100;
 			break;
 		
+		case (item.can):
+			if (global.HAMBRE < 75)
+				global.HAMBRE += 25;
+			else
+				global.HAMBRE = 100;
+			break;
+			
+		case (item.soup):
+			if (global.HAMBRE < 75)
+				global.HAMBRE += 15;
+			else
+				global.HAMBRE = 100;
+				
+			if (global.FRIO < 85)
+				global.HAMBRE += 15;
+			else
+				global.HAMBRE = 100;
+				
+			break;
+		
+		case (item.straw):
+			for (var i = 0; i < obj_caldera.cld_slots; i++) {
+				if (obj_caldera.ds_caldera[# 0, i] == item.straw)
+					obj_caldera.ds_caldera[# 1, i] += 1;
+			}
+			break;
+		
+		case (item.coal):
+			for (var i = 0; i < obj_caldera.cld_slots; i++) {
+				if (obj_caldera.ds_caldera[# 0, i] == item.coal)
+					obj_caldera.ds_caldera[# 1, i] += 1;
+			}
+			break;
+			
 		case (item.wood):
 			for (var i = 0; i < obj_caldera.cld_slots; i++) {
 				if (obj_caldera.ds_caldera[# 0, i] == item.wood)

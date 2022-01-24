@@ -21,10 +21,13 @@ if (!global.PAUSE) {
 
 if speed > 0 {
 	image_speed = 1;
+	if (!audio_is_playing(snd_andar)) audio_play_sound(snd_andar,10,false);
+	
 }
 else {
 	image_speed = 0;
 	image_index = 0;
+	audio_stop_sound(snd_andar);
 }
 
 //Selector sprite
@@ -44,6 +47,7 @@ var inst = instance_place(x, y, obj_transition);
 if (inst != noone) {
 	with(obj_control) {
 		if(!doTransition) {
+			if (!audio_is_playing(snd_puerta)) audio_play_sound(snd_puerta, 10, false);
 			spawnRoom = inst.targetRoom;
 			spawnX = inst.targetX;
 			spawnY = inst.targetY;

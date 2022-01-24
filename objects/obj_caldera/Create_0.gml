@@ -7,8 +7,8 @@ show_caldera = false;
 
 //Tiempos de consumo de combustibles
 tiempoMadera = 10;
-tiempoCarbon = 4;
-tiempoCarbonVegetal = 4;
+tiempoCarbon = 15;
+tiempoCarbonVegetal = 5;
 sprite_index = spr_caldera_off;
 alarm[0] = room_speed; 
 
@@ -99,9 +99,9 @@ ds_items_info[# z, i++] = "Victor viñas es un marica dibuja pistolas";
 
 ds_caldera[# 0, 0] = item.wood;
 ds_caldera[# 1, 0] = 0;
-ds_caldera[# 0, 1] = item.tomato;
+ds_caldera[# 0, 1] = item.straw;
 ds_caldera[# 1, 1] = 0;
-ds_caldera[# 0, 2] = item.carrot;
+ds_caldera[# 0, 2] = item.coal;
 ds_caldera[# 1, 2] = 0;
 	
 

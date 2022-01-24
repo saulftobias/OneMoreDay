@@ -12,7 +12,7 @@ if (global.HORA == 12) {
 	if (global.DIAS_GANAR == global.DIAS) {
 		global.WIN = true;
 	}
-	
+	if (!audio_is_playing(snd_puerta)) audio_play_sound(snd_puerta, 10, false);
 	global.HORA = 0;
 	global.DIAS = global.DIAS + 1;
 	global.CANSANCIO = global.CANSANCIO - 30;

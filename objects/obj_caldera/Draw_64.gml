@@ -1,5 +1,7 @@
 if(!show_caldera or room != rm_entrada or global.PAUSE) exit;
 
+
+
 //-------caldera Back
 draw_sprite_part_ext(
 	spr_cld_UI, 0, cell_size, 0, cld_UI_width, cld_UI_height, 

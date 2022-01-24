@@ -16,20 +16,20 @@ for (var i = 0; i < cld_slots; i += 1) {
 		switch (inv_grid[# 0, i]) {
 			case(item.wood):
 				if (global.FRIO < 90) {
-					global.FRIO += 10;
+					global.FRIO += 35;
 				} else {global.FRIO = 100}
 				 
 				alarm[0] = room_speed * tiempoMadera;
 				break;
 		
-			case(item.tomato):
+			case(item.coal):
 				if (global.FRIO < 90) {
-					global.FRIO += 10;
+					global.FRIO += 30;
 				} else {global.FRIO = 100}
 				alarm[0] = room_speed * tiempoCarbon;
 				break;
 		
-			case(item.carrot):
+			case(item.straw):
 				if (global.FRIO < 90) {
 					global.FRIO += 10;
 				} else {global.FRIO = 100}

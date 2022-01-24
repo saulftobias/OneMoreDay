@@ -2,12 +2,15 @@
 // You can write your code in this editor
 
 if(doTransition) {
+	
 	//Handle balack fade
 	if(room != spawnRoom or dormido) {
 		blackAlpha += 0.02;
 		if(blackAlpha >= 1) { 
+			
 			room_goto(spawnRoom);
 			dormido = false;
+			
 		}
 	} else {
 		blackAlpha -= 0.02;
