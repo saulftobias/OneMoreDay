@@ -12,6 +12,9 @@ global.MUERTE		 = false;
 global.WIN			 = false;
 global.KEY_ENTER	 = vk_enter;
 global.KEY_INVENTORY = ord("I");
+global.KEY_BOILER	 = ord("C");
+global.KEY_USAGE	 = ord("U");
+global.KEY_INTERACT	 = ord("E");
 global.KEY_LEFT		 = vk_left;
 global.KEY_RIGHT	 = vk_right;
 global.KEY_UP		 = vk_up;
@@ -68,11 +71,12 @@ ds_menu_graphics = scr_create_menu_page(
 );
 
 ds_menu_controls = scr_create_menu_page(
-	["UP",			menu_element_type.input,			"KEY_UP",				vk_up],
 	["LEFT",		menu_element_type.input,			"KEY_LEFT",				vk_left],
 	["RIGHT",		menu_element_type.input,			"KEY_RIGHT",			vk_right],
-	["DOWN",		menu_element_type.input,			"KEY_DOWN",				vk_down],
 	["INVENTORY",	menu_element_type.input,			"KEY_INVENTORY",		ord("I")],
+	["USAGE",		menu_element_type.input,			"KEY_USAGE",			ord("U")],
+	["BOILER",		menu_element_type.input,			"KEY_BOILER",			ord("C")],
+	["INTERACT",	menu_element_type.input,			"KEY_INTERACT",			ord("E")],
 	["BACK",		menu_element_type.page_transfer,	menu_page.settings]
 );
 

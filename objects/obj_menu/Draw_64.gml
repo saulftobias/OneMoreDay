@@ -101,11 +101,12 @@ repeat(ds_height) {
 			var c = c_white
 			
 			switch(current_val) {
-				case vk_up:		string_val = "UP KEY";		break;
 				case vk_left:	string_val = "LEFT KEY";	break;
 				case vk_right:	string_val = "RIGTH KEY";	break;
-				case vk_down:	string_val = "DOWN KEY";	break;
 				case ord("I"):	string_val = "I";			break;
+				case ord("U"):	string_val = "U";			break;
+				case ord("C"):	string_val = "C";			break;
+				case ord("E"):	string_val = "E";			break;
 				default:		string_val = chr(current_val);	break;
 			}
 			if(global.INPUTTING && yy == menu_option[page]) {c = c_yellow;} 

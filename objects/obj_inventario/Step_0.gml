@@ -1,7 +1,7 @@
 /// @description Cosas referentes a interaccionar con el inv
 // You can write your code in this editor
 
-if (keyboard_check_pressed((ord("I"))))
+if (keyboard_check_pressed(global.KEY_INVENTORY))
 	show_inventory = !show_inventory;
 	
 if(!show_inventory) exit; 
@@ -81,7 +81,7 @@ if(pickup_slot != -1) {
 } 
 
 //Use item
-if (keyboard_check_pressed((ord("U")))) {
+if (keyboard_check_pressed(global.KEY_USAGE)) {
 	switch (inv_grid[# 0, selected_slot]) {
 		case (item.tomato):
 			if (global.HAMBRE < 90)

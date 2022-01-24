@@ -1,7 +1,7 @@
 /// @description Cosas referentes a interaccionar con el cld
 // You can write your code in this editor
 
-if (keyboard_check_pressed((ord("C"))))
+if (keyboard_check_pressed(global.KEY_BOILER))
 	show_caldera = !show_caldera;
 	
 if(!show_caldera) exit; 
